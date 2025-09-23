@@ -39,6 +39,7 @@ label labyrinth_entrance:
     "You pass through the stone archway and into the courtyard of the labyrinth."
     "Up ahead you see a decrepit fountain."
     "To your right, you see a stone bench."
+    "To your left, you see a worn pathway out of the courtyard."
     
     menu:
         "Where will you go?"
@@ -48,6 +49,9 @@ label labyrinth_entrance:
             
         "To the Bench":
             jump bench_area
+
+        "To the Left":
+            jump level0_left
             
         "Go Back":
             jump cannot_turn_back
@@ -66,6 +70,25 @@ label fountain_area:
             
         "Look at the Fountain":
             jump look_at_fountain
+
+label level0_left:
+    scene level0_left:
+        size(1920,1080)
+    "You are now in what appears to be an old hedgerow. It is overgrown and in disrepair like the rest of the environment so far."
+    "You can't help but wonder what this place must have looked like back when it was maintained. Perhaps it was a grand outdoor theatre?"
+    "Along all sides, you can see more overgrown trees and vines strangling the old stone facades."
+    "You can inspect the statue if you'd like."
+    "You can also continue on the path beyond the statue."
+
+        menu:
+            "What do you want to do?"
+
+            "Inspect the Statue":
+                jump lv0_statue
+
+            "Head Past the Statue":
+                jump lv0_statue_behind
+    
 
 label look_at_fountain:
     "You see the murky brown water in front of you. Your nose fills with the stench of death and rot."
