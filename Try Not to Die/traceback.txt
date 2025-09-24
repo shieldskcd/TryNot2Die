@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/main.rpy", line 123, in script
-    jump secret_door
-ScriptError: could not find label 'secret_door'.
+  File "game/main.rpy", line 216, in script
+    jump lv0_maze_1
+ScriptError: could not find label 'lv0_maze_1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/main.rpy", line 123, in script
-    jump secret_door
+  File "game/main.rpy", line 216, in script
+    jump lv0_maze_1
   File "/Applications/renpy-8.3.7-sdk/renpy/ast.py", line 1712, in execute
     rv = renpy.game.script.lookup(target)
   File "/Applications/renpy-8.3.7-sdk/renpy/script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'secret_door'.
+ScriptError: could not find label 'lv0_maze_1'.
 
 macOS-15.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.7.25031702
 Try Not to Die 1.0
-Tue Sep 23 15:50:45 2025
+Wed Sep 24 14:43:14 2025
