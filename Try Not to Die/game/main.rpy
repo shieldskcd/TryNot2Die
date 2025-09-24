@@ -246,7 +246,240 @@ label lv0_maze_1_right:
             jump lv0_maze_2_right
         
         "Head back left":
-            jump lv0_maze
+            jump lv0_maze_1
+
+label lv0_maze_2_right:
+    scene lv0_maze:
+        size(1920, 1080)
+    "The path to the right looks very much like the last section you just came from."
+    "You can continue to move down this right path or head back to the left."
+
+    menu:
+        "Which direction?"
+
+        "Keep going right...":
+            jump lv0_maze_3_right
+
+        "Head left.":
+            jump lv0_maze_1_right
+
+label lv0_maze_3_right:
+    scene lv0_maze:
+        size(1920,1080)
+    "As you continue right, you get a sinking feeling that you are becoming lost in this maze. Everything seems to look the same."
+    "A short walk down this right path, you are relieved to see something different - a path leading north and a path leading south."
+
+    menu:
+        "Which Direction?"
+
+        "Turn to the north":
+            jump lv0_maze_3_right_north
+
+        "Turn to the south":
+            jump lv0_maze_3_right_south
+
+        "Go Back left":
+            jump lv0_maze_2_right
+
+label lv0_maze_3_right_north:
+    scene lv0_maze_birds:
+        size(1920,1080)
+    "In this section of the maze, there is a large open clearing. You feel a strange wind rustling the grass at your feet."
+    "Above you, you see a strange sight - birds. Or at least they look like birds."
+    "Small bird-like creatures flit in and out of the sky aroud you. They rarely come close enough to be seen, but when they do, you notice they are partially transluscent."
+    "The air is filled with the sounds of a strange birdsong. It's ethereal and calming at the same time. Almost like human voices, but more distant."
+    "You feel yourself relax as though all the chaos of this labyrinth was somehow far away. Maybe this is a safe place."
+
+    menu:
+        "What do you want to do?"
+
+        "Listen to the song longer...":
+            jump lv0_birds_01
+        
+        "Head back to where you came from":
+            jump lv0_maze_3_right
+
+label lv0_maze_3_right_south:
+    scene lv0_maze_deadend:
+        size(1920,1080)
+    "As you turn to the south, you find that the maze does not continue further."
+    "Although the walls spread out a bit, there does not appear to be any other way out but the way you came."
+
+    menu:
+        "Go Back":
+            jump lv0_maze_3_right
+
+label lv0_birds_01:
+    scene lv0_maze_birds:
+        size(1920,1080)
+    "You decide to listen longer to the singing of the birds. It's the first chance you have had to relax since you arrived."
+    "Their song grows louder amidst the deep silence of the rest of the maze."
+    "You start to find yourself getting a bit tired. Perhaps you could stay a little longer and rest?"
+
+    menu:
+        "Listen Longer?"
+
+        "Yes":
+            jump lv0_birds_02
+        
+        "No":
+            jump lv0_maze_3_right
+
+label lv0_birds_02:
+    scene lv0_maze_birds:
+        size(1920,1080)
+    "You continue to listen to the birds sing. The sound is so soothing that you find yourself lying down in the grass as the ethereal birds fly around overhead."
+    "Soon, your body is so heavy that you can't move it anymore. You don't want to leave and you now realize that you can't."
+
+    menu: 
+        "Sleep":
+            jump lv0_bird_death
+
+label lv0_bird_death:
+    $ death_count += 1
+    scene death:
+        size (1920, 1080)
+    show text "{size=80}{color=#cc0000}{font=fonts/Butcherman-Regular.ttf}You Died{/font}{/color}{/size}" at Position(xalign=0.3, yalign=0.1) with dissolve
+    "Of all the ways you could have died, this was the most peaceful. You drift into eternal slumber."
+    "You have died..."
+
+    menu:
+        "Try Again":
+            jump start
+
+label lv0_maze_1_left:
+    scene lv0_maze:
+        size(1920,1080)
+    "The maze path is old, unkept, and covered with vines. Despite this disrepair, the path itself is paved with cobbles and is walkable."
+    "The path continues to wind off to the left for what seems like a long distance."
+    "You can continue walking left or turn back to the right."
+
+    menu:
+        "Where do you want to go?"
+
+        "Keep going left":
+            jump lv0_maze_2_left
+
+        "Go back":
+            jump lv0_maze_1
+
+label lv0_maze_2_left:
+    scene lv0_maze:
+        size(1920, 1080)
+    "The path winds on to the left but the scenery does not change much."
+    "What strikes you as the most unusual thing besides the disrepair of the place is the sheer silence."
+    "You have heard the term 'silence is deafening' but this is the first time you understood what it meant."
+    "You can continue heading left or turn back."
+
+    menu:
+        "Where do you want to go?"
+
+        "Continue left.":
+            jump lv0_maze_3_left
+
+        "Head back.":
+            jump lv0_maze_1_left
+
+label lv0_maze_3_left:
+    scene lv0_maze:
+        size(1920,1080)
+    "The left path ends here but there are two paths ahead. One path turns to the north and the other to the south."
+    "You may choose to go north, south, or back the way you came."
+
+    menu:
+        "Which way?"
+
+        "Turn north.":
+            jump lv0_maze_3_left_north
+
+        "Turn south.":
+            jump lv0_maze_3_left_south
+
+        "Go back.":
+            jump lv0_maze_2_left
+
+label lv0_maze_3_left_north:
+    scene lv0_maze:
+        size(1920,1080)
+    "This path appears to meander slowly north and west with a small upward slope."
+    "The place is so quiet that you swear you can hear your heart beating."
+    "You can continue north or go back where you came from."
+
+    menu:
+        "Which way?"
+
+        "Keep going north.":
+            jump lv0_maze_3_left_north_2
+
+        "Head back.":
+            jump lv0_maze_3_left
+
+label lv0_maze_3_left_north_2:
+    scene lv0_maze:
+        size(1920,1080)
+    "The path continues heading to the north and west but appears to have flattened out slightly."
+    "You are starting to feel like you have lost all sense of direction."
+    "From here you can continue going north or head back."
+
+    menu:
+        "Which way?"
+
+        "Keep going north.":
+            jump lv0_maze_3_left_north_3
+
+        "Head back.":
+            jump lv0_maze_3_left_north_1
+
+label lv0_maze_3_left_north_3:
+    scene lv0_maze:
+        size(1920,1080)
+    "The path continues to travel north but is now almost heading straight north."
+    "At least, that's how it feels to you, your own internal compass is completely muddled now."
+    "You can keep heading north or head back."
+
+    menu:
+        "Which way?"
+
+        "Keep going north.":
+            jump lv0_maze_3_left_north_4
+
+        "Head back.":
+            jump lv0_maze_3_left_north_2
+
+label lv0_maze_3_left_north_4:
+    scene lv0_maze:
+        size(1920,1080)
+    "Much to your dismay, this path continues onward with no real change in the scenery."
+    "You have begun to lose all sense of time and direction."
+    "You can continue going north or head back."
+
+    menu:
+        "Which way?"
+
+        "Keep going north.":
+            jump lv0_maze_3_left_north_5
+
+        "Head back.":
+            jump lv0_maze_3_left_north_3
+
+label lv0_maze_3_left_north_5:
+    scene lv0_maze:
+        size(1920,1080)
+    "At this junction, the path branches two ways."
+    "You can continue heading north or head to the left."
+    
+    menu:
+        "Which way?"
+
+        "Keep going north.":
+            jump lv0_maze_3_left_north_6
+
+        "Head left":
+            jump lv0_maze_3_left_north_5_left
+
+        "Go Back":
+            jump lv0_maze_3_left_north_4
+            
 
 label look_at_fountain:
     "You see the murky brown water in front of you. Your nose fills with the stench of death and rot."
