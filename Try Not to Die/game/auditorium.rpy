@@ -232,3 +232,15 @@ label lv0_maze_auditorium_play_f:
     menu:
         "Continue playing...forver...":
             jump lv0_maze_auditorium_violin_death
+
+label lv0_maze_orchestra_cant_stop:
+    scene violin_death:
+        size(1920,1080)
+    "You try to remove your fingers from the instrument but you can't!"
+    "You feel a sense of terror strike you as you realize that your fingrs are bleeding profusely and all the blood is flowing into the violin."
+    "The more you try to pull your fingers away, the more you feel pain burning into your hands."
+    "You realize the horrible truth. You must play in this orchestra for eternity."
+
+    menu:
+        "Continue playing...forver...":
+            jump lv0_maze_auditorium_violin_death 

@@ -307,12 +307,11 @@ label lv0_maze_3_left_north_7:
         "Go back the direction you came":
             jump lv0_maze_3_left_north_6
 
-# SOUTH PATH FROM LEFT (STUB - needs implementation)
 label lv0_maze_3_left_south:
-    scene lv0_maze:
+    scene lv0_maze_deadend:
         size(1920,1080)
     "You turn south and follow the winding path. The hedges here seem even more overgrown than before."
-    "TO BE CONTINUED..."
+    "As you come around the corner, you find that it is just a dead end. There is nowhere to go but back the way you came."
     
     menu:
         "Go Back":
