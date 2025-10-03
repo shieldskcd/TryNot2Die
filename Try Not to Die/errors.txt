@@ -2,29 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/main.rpy", line 83: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    menu:
-    ^
-
-File "game/main.rpy", line 101: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    menu:
-    ^
-
-File "game/main.rpy", line 120: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    menu:
-    ^
-
-File "game/main.rpy", line 138: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    menu:
-    ^
-
-File "game/main.rpy", line 155: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    menu:
-    ^
-
-File "game/main.rpy", line 161: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    scene death:
-    ^
+File "game/auditorium.rpy", line 232: end of line expected.
+    jump lv0_maze_auditorium_violin_death:
+                                         ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Wed Sep 24 14:15:54 2025
+Fri Oct  3 15:45:07 2025

@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/main.rpy", line 234, in script
-    jump lv0_maze_1_left
-ScriptError: could not find label 'lv0_maze_1_left'.
+  File "game/auditorium.rpy", line 169, in script
+    jump lv0_maze_auditorium_orchestra_play_2
+ScriptError: could not find label 'lv0_maze_auditorium_orchestra_play_2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/main.rpy", line 234, in script
-    jump lv0_maze_1_left
+  File "game/auditorium.rpy", line 169, in script
+    jump lv0_maze_auditorium_orchestra_play_2
   File "/Applications/renpy-8.3.7-sdk/renpy/ast.py", line 1712, in execute
     rv = renpy.game.script.lookup(target)
   File "/Applications/renpy-8.3.7-sdk/renpy/script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'lv0_maze_1_left'.
+ScriptError: could not find label 'lv0_maze_auditorium_orchestra_play_2'.
 
 macOS-15.6.1-arm64-arm-64bit arm64
 Ren'Py 8.3.7.25031702
 Try Not to Die 1.0
-Wed Sep 24 15:57:17 2025
+Fri Oct  3 15:46:50 2025
