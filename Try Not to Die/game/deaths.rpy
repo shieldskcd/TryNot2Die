@@ -66,3 +66,15 @@ label lv0_maze_auditorium_violin_death:
     menu:
         "Try Again":
             jump start
+
+label lv0_maze_auditorium_sing_death:
+    $ death_count += 1
+    scene death:
+        size (1920, 1080)
+    show text "{size=80}{color=#cc0000}{font=fonts/Butcherman-Regular.ttf}You Died{/font}{/color}{/size}" at Position(xalign=0.3, yalign=0.1) with dissolve
+    "There is nothing left... only music. You will keep singing as the darkness takes you."
+    "The light slowly fades and so do the notes..."
+
+    menu:
+        "Try Again":
+            jump start

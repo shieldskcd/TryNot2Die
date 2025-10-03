@@ -93,22 +93,6 @@ label lv0_maze_auditorium_stage_attacked:
         "Try to Run":
             jump lv0_maze_auditorium_stage_death
 
-# STUB LABELS - Need implementation
-label lv0_maze_auditorium_stage_memory_song:
-    scene lv0_maze_auditorium_memory:
-        size(1920,1080)
-    "You open your mouth to sing, and a beautiful melody flows from your lips. The crowd is enraptured."
-    "The ghostly audience applauds enthusiastically. You feel the memory beginning to fade..."
-    "As the vision dissipates, you find yourself back on the ruined stage."
-    
-    menu:
-        "What now?"
-        
-        "Explore more of the auditorium":
-            jump lv0_maze_auditorium
-            
-        "Leave the auditorium":
-            jump lv0_maze_3_left_north_7
 
 label lv0_maze_auditorium_stage_memory_drama:
     scene lv0_maze_auditorium_memory:
@@ -244,3 +228,138 @@ label lv0_maze_orchestra_cant_stop:
     menu:
         "Continue playing...forver...":
             jump lv0_maze_auditorium_violin_death 
+
+label lv0_maze_auditorium_stage_memory_song:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "You step on to the stage and suddenly feel the lights come up - they are all on you!"
+    "You don't remember being much of a singer, but you decide to give it a try."
+    "As you take in a breath, you notice a microphone apepars in front fo you, ready for your voice."
+
+    menu:
+        "What song will you sing?"
+
+        "A sad aria":
+            jump lv0_stage_sing_aria
+
+        "A cheerful hymn":
+            jump lv0_stage_sing_cheerful
+
+        "Don't Sing...":
+            jump lv0_stage_dont_sing
+
+label lv0_stage_sing_aria:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "Without any hesitation, you feel a song rumble forth from your throat."
+    "The melody is minor key, slightly melacncholoy, and causes you to think back on a sad time in your life."
+    "You don't realize it at first, but as you sing the song, the words that are coming out of your mouth are not of any language you recognize."
+    "The words flow out of you with ease but you don't have the a clue what you are singing."
+
+    menu:
+        "What will you do?"
+
+        "Continue singing":
+            jump lv0_stage_sing_aria_2
+
+        "Stop singing":
+            jump lv0_stage_stop_singing
+
+label lv0_stage_sing_aria_2:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "The strange words flow from your mouth continually. You still have no idea what you are singing."
+    "Regardless of the confusion, the audience seems to enjoy the sound."
+    "The emotional pain of such a sad song begins to fill your mind as well. All you can think of are the sorrowful things you have experienced in your life."
+
+    menu:
+        "What now?"
+
+        "Focus on the sadness":
+            jump lv0_stage_sing_aria_3
+
+        "Stop Singing":
+            jump lv0_stage_stop_singing
+
+label lv0_stage_sing_aria_3:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "You dig yourself deeper into the sadness in your heart. You see visions of loss, pain, troubles, all exploding through your mind."
+    "Despite all this, your voice remains clear and stable as you feel less and less like you and more and more like someone else."
+    "The crowd is hanging on every note and you feel like they, too, are feeling and reliving their own pain"
+
+    menu:
+        "What now?"
+
+        "Keep singing":
+            jump lv0_stage_sing_aria_4
+
+        "Stop singing":
+            jump lv0_stage_stop_singing
+
+label lv0_stage_sing_aria_4:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "You feel yourself starting to escape reality. The people love your song so much! Why would you stop singing now?"
+    "You quickly realize that you don't want to stop now. You want to keep the people engaged. You are a star!"
+    "You continue to sing, but you feel yourself fading into the lights around you."
+
+    menu:
+        "Sing...forver...":
+            jump lv0_maze_auditorium_sing_death
+
+label lv0_stage_sing_cheerful:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+    
+    "Clearing your throat, you feel an upbeat song coming to your mind. You have never been much of a singer, but this feels right."
+    "You begin the first few notes of a cheerful tone. You have no idea how you know thie words or the language but the audience seems interested."
+    "With each note you sing, you feel more positive energy growing around you."
+
+    menu:
+        "What now?"
+
+        "Keep Singing":
+            jump lv0_stage_sing_cheerful_1
+
+        "Stop Singing":
+            jump lv0_stage_stop_singing
+
+label lv0_stage_sing_cheerful_1:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "You continue to belt our this positive song. In fact, you start to feel genuinely happy that you can share it with the crowd."
+    "It's as though all the memory of having to go through this maze was not important because it led up to this moment!"
+    "The crowd is swaying to your music and you feel the music following your lead."
+
+    menu:
+        "What do you do?"
+
+        "Keep singing":
+            jump lv0_stage_sing_cheerful_2
+
+        "Stop Singing":
+            jump lv0_stage_stop_singing
+
+label lv0_stage_sing_cheerful_2:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+
+    "The notes of your song grow ever louder. The crowd's happiness and mirth is palpable."
+    "With each new stanza you sing, your confidence grows and your fear eases."
+    "You feel like you would like to sing for this crowd forever."
+
+    menu:
+        "What do you do?"
+
+        "Keep singing":
+            jump lv0_stage_sing_cheerful_3
+
+        "Stop Singing":
+            jump lv0_stage_stop_singing
