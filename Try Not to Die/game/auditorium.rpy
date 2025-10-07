@@ -32,7 +32,7 @@ label lv0_maze_auditorium_stage:
     menu:
         "What do you do?"
 
-        "Continue Imaging":
+        "Continue Imagining":
             jump lv0_maze_auditorium_stage_memory
         
         "Ignore the feeling and keep investigating":
@@ -77,7 +77,7 @@ label lv0_maze_auditorium_stage_attacked:
     scene lv0_maze_auditorium_attacked:
         size(1920,1080)
 
-    "The people are not going to leave yoy alone! Now the people have grown hostile. You were supposed to give them a show and now you are trying to leave?"
+    "The people are not going to leave you alone! Now the people have grown hostile. You were supposed to give them a show and now you are trying to leave?"
     "To your abject horror, the people begin swarming over the stage. You are attacked from every possible angle. You have no idea how you can escape."
     "You can lay down and hope you are assumed dead. You can also try to fight back. Running will get you nowhere."
 
@@ -111,7 +111,7 @@ label lv0_maze_auditorium_stage_memory_drama:
             jump lv0_maze_3_left_north_7
 
 label lv0_maze_auditorium_balcony:
-    scene lv0_maze_auditorioum:
+    scene lv0_maze_auditorium:
         size(1920,1080)
     "You climb up the crumbling steps to what remains of the balcony seating."
     "From here, you have a better view of the entire theatre. The decay is even more apparent from this vantage point."
@@ -373,3 +373,33 @@ label lv0_stage_sing_cheerful_3:
     menu: 
         "Keep Singing":
             jump lv0_maze_auditorium_sing_death
+
+label lv0_stage_stop_singing:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+    "You stop singing, feeling like this is all some kind of dream."
+    "Much to your surprise, the audience does not dissapear. A stunnned silence fills the room."
+    "Now they are upset and beging swarming the stage!"
+
+    menu:
+        "Run":
+            jump lv0_maze_auditorium_stage_attacked
+        "Cry Out":
+            jump lv0_maze_auditorium_stage_attacked
+        "Lay Down":
+            jump lv0_maze_auditorium_stage_attacked 
+
+label lv0_stage_dont_sing:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+    "You decide not to sing. The crowd waits expectantly, but you remain silent."
+    "After a moment, the memory begins to fade and you're back in the present."
+    
+    menu:
+        "What now?"
+        
+        "Try something else on stage":
+            jump lv0_maze_auditorium_stage_memory
+            
+        "Leave the stage":
+            jump lv0_maze_auditorium

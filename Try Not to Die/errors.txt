@@ -2,11 +2,29 @@
 errors listed below, and try again.
 
 
-The label lv0_maze_auditorium_stage_memory_song is defined twice, at File "game/auditorium.rpy", line 97:
-label lv0_maze_auditorium_stage_memory_song:
-and File "game/auditorium.rpy", line 248:
-label lv0_maze_auditorium_stage_memory_song:
+File "game/secret_room.rpy", line 6: Line with id secret_door_enter_78cbd6d6 appears twice. The other line is game/lv1_steampunk.rpy:8
 
+File "game/secret_room.rpy", line 7: Line with id secret_door_enter_a3e4404a appears twice. The other line is game/lv1_steampunk.rpy:9
+
+File "game/secret_room.rpy", line 8: Line with id secret_door_enter_a6501040 appears twice. The other line is game/lv1_steampunk.rpy:10
+
+File "game/secret_room.rpy", line 9: Line with id secret_door_enter_012d3e98 appears twice. The other line is game/lv1_steampunk.rpy:11
+
+File "game/secret_room.rpy", line 10: Line with id secret_door_enter_a5cb7aca appears twice. The other line is game/lv1_steampunk.rpy:12
+
+File "game/secret_room.rpy", line 27: Line with id inspect_walls_3cb9da11 appears twice. The other line is game/lv1_steampunk.rpy:30
+
+File "game/secret_room.rpy", line 28: Line with id inspect_walls_b97fbd5b appears twice. The other line is game/lv1_steampunk.rpy:31
+
+File "game/secret_room.rpy", line 29: Line with id inspect_walls_b497b59c appears twice. The other line is game/lv1_steampunk.rpy:32
+
+File "game/secret_room.rpy", line 44: Line with id inspect_gears_c9c4a606 appears twice. The other line is game/lv1_steampunk.rpy:250
+
+File "game/secret_room.rpy", line 45: Line with id inspect_gears_42fe60b4 appears twice. The other line is game/lv1_steampunk.rpy:251
+
+File "game/secret_room.rpy", line 46: Line with id inspect_gears_19cfea4a appears twice. The other line is game/lv1_steampunk.rpy:252
+
+File "game/secret_room.rpy", line 61: Line with id walk_forward_5c58cfe7 appears twice. The other line is game/lv1_steampunk.rpy:145
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Oct  3 16:27:48 2025
+Tue Oct  7 15:49:42 2025
