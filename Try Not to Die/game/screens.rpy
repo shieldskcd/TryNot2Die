@@ -352,8 +352,26 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add "MainMenu.png"
 
+        # Title text with custom font
+    text "Try Not to Die":
+        xalign 0.7  # Center horizontally
+        yalign 0.15  # Position near top (adjust as needed)
+        size 180    # Font size
+        color "#ffffff"  # White text (change as desired)
+        font "fonts/MacandoSwash.ttf"  # Your custom font
+        text_align 0.5
+
+    
+    # Version number (optional)
+    text "Version 1.0":
+        xalign 0.95
+        yalign 0.95
+        size 30
+        color "#cccccc"
+        font "fonts/MacandoSwash.ttf"
+    
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
@@ -362,16 +380,16 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     use navigation
 
-    if gui.show_name:
+    # if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+    #     vbox:
+    #         style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    #         text "[config.name!t]":
+    #             style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+    #         text "[config.version]":
+    #             style "main_menu_version"
 
 
 style main_menu_frame is empty

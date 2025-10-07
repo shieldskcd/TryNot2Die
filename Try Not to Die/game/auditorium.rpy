@@ -363,3 +363,13 @@ label lv0_stage_sing_cheerful_2:
 
         "Stop Singing":
             jump lv0_stage_stop_singing
+
+label lv0_stage_sing_cheerful_3:
+    scene lv0_maze_auditorium_memory:
+        size(1920,1080)
+    "Without thinking, you take a deep breath and continue singing the cheerful song. The crowd is enraptured with your voice."
+    "You realize now that this is a concert that will never end. You could not even stop if you want to."
+
+    menu: 
+        "Keep Singing":
+            jump lv0_maze_auditorium_sing_death
