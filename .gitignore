@@ -1,0 +1,16 @@
+# Ren'Py compiled bytecode / artifacts
+*.rpyc
+*.rpyb
+*.rpymc
+*.rpa
+
+# Ren'Py runtime / generated
+**/cache/
+**/saves/
+errors.txt
+log.txt
+traceback.txt
+
+# OS noise
+.DS_Store
+Thumbs.db
